@@ -1,0 +1,21 @@
+{
+  "mode": "demo",
+  "note": "示例数据，非实时麦当劳报价",
+  "items": ["巨无霸套餐", "薯条(中)"],
+  "budget": 50,
+  "strategies": [
+    {
+      "name": "原价（无券）",
+      "payable": 48.0,
+      "coupons_used": [],
+      "savings": 0
+    },
+    {
+      "name": "使用「巨无霸套餐减10」",
+      "payable": 38.0,
+      "coupons_used": ["示例券-巨无霸套餐减10"],
+      "savings": 10.0
+    }
+  ],
+  "best": "使用「巨无霸套餐减10」"
+}

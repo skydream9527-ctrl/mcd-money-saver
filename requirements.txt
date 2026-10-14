@@ -1,0 +1,2 @@
+# 麦门省钱助手 — runtime deps (Python 3.10+)
+httpx>=0.27.0,<1.0.0

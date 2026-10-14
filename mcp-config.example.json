@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "mcdonalds-china": {
+      "url": "https://mcp.mcd.cn",
+      "transport": "streamable-http",
+      "headers": {
+        "Authorization": "Bearer ${MCD_MCP_TOKEN}"
+      },
+      "env": {
+        "MCD_MCP_TOKEN": "${MCD_MCP_TOKEN}"
+      },
+      "description": "麦当劳中国官方 MCP。Token 请从 https://mcp.mcd.cn 控制台获取，勿将真实令牌写入本文件或提交到 Git。"
+    }
+  },
+  "notes": [
+    "Replace ${MCD_MCP_TOKEN} via your client env or secret store.",
+    "Never commit real tokens, passwords, or personal data.",
+    "Default skill flow uses read-only tools; avoid create-order / mall-create-order / draw-lottery."
+  ]
+}
