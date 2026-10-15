@@ -1,0 +1,84 @@
+{
+  "mode": "live",
+  "capturedAt": "2026-10-15",
+  "note": "实时 MCP calculate-price 样例（已脱敏：无 Token、无完整券码）。价格可能随时变化；到店自取；非官方。",
+  "channel": "到店自取",
+  "beType": 1,
+  "orderType": 1,
+  "store": {
+    "storeName": "麦当劳上海黄浦华旭国际大厦餐厅",
+    "address": "西藏中路336号",
+    "storeCode": "1450713"
+  },
+  "meal": {
+    "name": "巨无霸三件套",
+    "productCode": "9900005466",
+    "menuPriceYuan": 36.5
+  },
+  "pointsExample": {
+    "availablePoint": 95.2,
+    "currency": "麦享会积分",
+    "note": "示例账户积分，仅作展示"
+  },
+  "coupons": [
+    {
+      "title": "中薯条买一送一",
+      "expireDate": "2026-10-16",
+      "couponCode": "***REDACTED***",
+      "couponId": "***REDACTED***"
+    },
+    {
+      "title": "王牌小食拼",
+      "expireDate": "2026-10-16",
+      "couponCode": "***REDACTED***",
+      "couponId": "***REDACTED***"
+    }
+  ],
+  "priceTableYuan": [
+    {
+      "scenario": "仅套餐",
+      "payable": 36.5,
+      "original": 36.5,
+      "save": 0
+    },
+    {
+      "scenario": "套餐+中薯条买一送一",
+      "payable": 50.0,
+      "original": 63.5,
+      "save": 13.5
+    },
+    {
+      "scenario": "套餐+王牌小食拼",
+      "payable": 52.4,
+      "original": null,
+      "save": 6.1,
+      "note": "相对无券同组合的节省（以当次算价为准）"
+    }
+  ],
+  "failures": [
+    {
+      "scenario": "两张券同单",
+      "ok": false,
+      "message": "暂不支持多张券使用"
+    },
+    {
+      "scenario": "套餐直接套券（券挂在套餐商品上）",
+      "ok": false,
+      "message": "促销规则不支持该商品"
+    }
+  ],
+  "toolsUsed": [
+    "query-nearby-stores",
+    "query-meals",
+    "query-meal-detail",
+    "query-store-coupons",
+    "query-my-account",
+    "calculate-price"
+  ],
+  "forbiddenNotCalled": [
+    "create-order",
+    "auto-bind-coupons",
+    "draw-lottery",
+    "mall-create-order"
+  ]
+}

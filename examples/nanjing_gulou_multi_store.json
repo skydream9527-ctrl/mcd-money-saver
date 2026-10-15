@@ -1,0 +1,103 @@
+{
+  "mode": "live",
+  "capturedAt": "2026-10-15T21:50+08:00",
+  "note": "南京市鼓楼一带多门店实时比价（已脱敏）。搜索关键词：鼓楼区中山路/湖南路/新街口/鼓楼；beType=1 到店自取。价格可能变化；非官方。",
+  "city": "南京",
+  "areaHint": "鼓楼区 · 中山路/湖南路/新街口北侧一带",
+  "channel": "到店自取",
+  "beType": 1,
+  "orderType": 1,
+  "interestMeal": {
+    "name": "巨无霸三件套",
+    "productCode": "9900005466"
+  },
+  "couponsAvailable": [
+    {"title": "中薯条买一送一", "expireDate": "2026-10-16"},
+    {"title": "王牌小食拼", "expireDate": "2026-10-16"}
+  ],
+  "storesCompared": [
+    {
+      "storeCode": "1990346",
+      "storeName": "麦当劳南京新百餐厅",
+      "address": "中山南路1号A座负一层G-A-025号商铺",
+      "distance_m": 182,
+      "mealCurrentPriceYuan": 37.5,
+      "pricesYuan": {
+        "仅套餐": 37.5,
+        "套餐+中薯条买一送一": 51.0,
+        "套餐+王牌小食拼": 53.4
+      }
+    },
+    {
+      "storeCode": "1990256",
+      "storeName": "麦当劳南京湖南路吾悦广场餐厅",
+      "address": "湖北路51号南京湖南路新城吾悦广场二层2017-2号商铺",
+      "distance_m": 260,
+      "mealCurrentPriceYuan": 37.5,
+      "pricesYuan": {
+        "仅套餐": 37.5,
+        "套餐+中薯条买一送一": 51.0,
+        "套餐+王牌小食拼": 53.4
+      }
+    },
+    {
+      "storeCode": "1990260",
+      "storeName": "麦当劳南京凤凰广场餐厅",
+      "address": "湖南路一号凤凰广场南塔楼负一楼B1-01号商铺",
+      "distance_m": 425,
+      "mealCurrentPriceYuan": 36.5,
+      "pricesYuan": {
+        "仅套餐": 36.5,
+        "套餐+中薯条买一送一": 50.0,
+        "套餐+王牌小食拼": 52.4
+      },
+      "friesBogoDetail": {
+        "payableYuan": 50.0,
+        "originalYuan": 63.5,
+        "saveYuan": 13.5
+      }
+    },
+    {
+      "storeCode": "1990563",
+      "storeName": "麦当劳南京凯瑟琳广场餐厅",
+      "address": "北京东路1号环亚凯瑟琳广场H-05商铺",
+      "distance_m": 501,
+      "mealCurrentPriceYuan": 36.5,
+      "pricesYuan": {
+        "仅套餐": 36.5,
+        "套餐+中薯条买一送一": 50.0,
+        "套餐+王牌小食拼": 52.4
+      }
+    }
+  ],
+  "conclusion": {
+    "cheapestStores": ["麦当劳南京凤凰广场餐厅", "麦当劳南京凯瑟琳广场餐厅"],
+    "cheapestMealOnlyYuan": 36.5,
+    "cheapestWithBestCouponYuan": 50.0,
+    "bestSingleCoupon": "中薯条买一送一",
+    "vsPricierStoresYuan": 1.0,
+    "notes": [
+      "同品「巨无霸三件套」在鼓楼一带门店价差约 ¥1（36.5 vs 37.5）",
+      "单店最优单券组合多为「套餐+中薯条买一送一」",
+      "两张券同单失败：暂不支持多张券使用",
+      "套餐商品直接挂券失败：促销规则不支持该商品"
+    ]
+  },
+  "failures": [
+    {"scenario": "两张券同单", "message": "暂不支持多张券使用", "code": 600022},
+    {"scenario": "套餐直接套券", "message": "促销规则不支持该商品", "code": 600012}
+  ],
+  "toolsUsed": [
+    "query-nearby-stores",
+    "query-store-coupons",
+    "query-meals",
+    "query-meal-detail",
+    "calculate-price"
+  ],
+  "forbiddenNotCalled": [
+    "create-order",
+    "auto-bind-coupons",
+    "draw-lottery",
+    "mall-create-order"
+  ]
+}
