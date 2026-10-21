@@ -1,5 +1,9 @@
 # 麦门省钱助手（mcd-money-saver）
 
+[![GitHub stars](https://img.shields.io/github/stars/skydream9527-ctrl/mcd-money-saver?style=social)](https://github.com/skydream9527-ctrl/mcd-money-saver)
+
+> 🙏 参赛排名按公开 GitHub Stars 计——若本仓库对你有帮助，麻烦点一下右上角 **⭐ Star** 支持一下！截止：**北京时间 2026-10-25 23:59**（榜单以 10-26 00:00 计）；**Star=0 无法上榜**，谢谢！
+
 > 麦当劳程序员节创意开发大赛参赛作品 · **非麦当劳官方产品**
 
 「麦门省钱助手」是一个面向麦当劳中国用户的 **Skill / CLI 省钱顾问**：结合优惠券、积分商城兑换与菜单算价，帮你在下单前找到更省钱的组合策略。
